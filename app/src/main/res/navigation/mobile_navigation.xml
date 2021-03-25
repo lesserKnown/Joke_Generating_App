@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_comedian1display">
+
+    <fragment
+        android:id="@+id/nav_comedian1"
+        android:name="com.example.jokeapp.ui.tab_comedian1.MarkFragment"
+        android:label=""
+        tools:layout="@layout/fragment_marknorm" >
+        <!--<action
+            android:id="@+id/action_nav_comedian1_to_nav_comedian1display"
+            app:destination="@id/nav_comedian1display"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_comedian1display"
+        android:name="com.example.jokeapp.ui.tab_comedian1.MarkFeedFragment"
+        android:label=""
+        tools:layout="@layout/fragment_marknormfeed" >
+        <!--<action
+            android:id="@+id/action_nav_comedian1display_to_nav_comedian1"
+            app:destination="@id/nav_comedian1"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left" />-->
+    </fragment>
+
+</navigation>

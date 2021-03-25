@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.JokeApp.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/Theme.JokeApp.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/twitterLogo"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/capoo_icon"
+                tools:ignore="VectorDrawableCompat" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/toolbarSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:background="@color/twitterdarkGrey" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/storybar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/Theme.JokeApp.PopupOverlay">
+
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_story_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileButtonView1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="0sp"
+                android:elevation="12dp"
+                app:cardCornerRadius="40sp">
+
+                <ImageButton
+                    android:id="@+id/profileButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comedian1_profile400x400" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileButtonView2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="30sp"
+                android:elevation="12dp"
+                app:cardCornerRadius="40sp">
+
+                <ImageButton
+                    android:id="@+id/profileButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comedian2_profile400x400" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileButtonView3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="12sp"
+                android:elevation="12dp"
+                app:cardCornerRadius="40sp">
+
+                <ImageButton
+                    android:id="@+id/profileButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comedian3_profile400x400" />
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/toolbarSeparator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/twitterdarkGrey" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+    </FrameLayout>
+
+    <!--<include layout="@layout/content_main" />-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_twitter_icon"
+        app:tint="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

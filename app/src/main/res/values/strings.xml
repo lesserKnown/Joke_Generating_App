@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Joke App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"><b>Try Selecting One!</b></string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">About</string>
+    <string name="sampleText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    </string>
+    <string name="aboutText"><b>This joke-generating app utilises OpenAI’s machine learning model, GPT-2, to generate jokes based on Tweets from famous comedians’ Twitter accounts.</b>
+    </string>
+
+    <string name="formLink"><a href="https://forms.gle/dPLzdvLaXJSe8Qt96">Click me for the survey!</a></string>
+
+    <string name="menu_comedian1">@marknorm</string>
+    <string name="comedian1Name">mark normand</string>
+    <string name="comedian1URL">https://twitter.com/marknorm</string>
+
+    <string name="menu_comedian2">@JoeMande</string>
+    <string name="comedian2Name">joe mande</string>
+    <string name="comedian2URL">https://twitter.com/JoeMande</string>
+
+    <string name="menu_comedian3">@badbanana</string>
+    <string name="comedian3Name">Tim Siedell</string>
+    <string name="comedian3URL">https://twitter.com/badbanana</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

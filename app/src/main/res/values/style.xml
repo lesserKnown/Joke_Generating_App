@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/twitterBirdBlue</item>
+    </style>
+    <style name="dotsIcon" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/twitterBirdBlue</item>
+    </style>
+    <style name="menuItemAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="aboutMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+</resources>
